@@ -2,7 +2,7 @@
 ##   and the ability to cache the inverse of the matrix
 
 
-## makeCacheMatrix returns a cacheMatrix object with the following functions defined:
+## makeCacheMatrix returns a cachedMatrix object with the following functions defined:
 ##   $get - returns the matrix
 ##   $set - overides the matrix & resets the inverse cache
 ##   $setinverse - sets the inverse matrix
@@ -22,7 +22,7 @@ makeCacheMatrix <- function(x = matrix()) {
   list(set = set, get = get, getinverse = getinverse, setinverse = setinverse)
 }
 
-## cacheSolve returns the inverse of matrix in cacheMatrix object either from the cache or 
+## cacheSolve returns the inverse of matrix in the cachedMatrix by retreiving from the cache or 
 ## by computing the inverse
 ## params:
 ##    x -> cachedMatrix object
